@@ -1,0 +1,353 @@
+@import url(style.css);
+
+.onMobile .icon-cancel{
+
+    margin:-200px 0 0 0;
+    font-size:200%;
+    cursor: pointer;
+}
+.icon-cancel{
+    width: 100%;
+    background-color: red;
+    justify-content: right;
+    align-items: right;
+}
+.onMobile li:first-child{
+    border: none;
+}
+.onMobile li:nth-child(2){
+    margin:20px 0 0 0;
+}
+
+.onPc{
+    display:;
+
+}
+.onMobile{
+    opacity: 0.81;
+    justify-content: left;
+    align-items: left;
+    position: fixed;
+    top: 0;
+    right:0;
+    height: 500px;
+    width: 300px;
+    margin:10px 0 0;
+    padding:20px 10px 10px 10px;
+    font-size: 22px;
+    flex-direction: column;
+    box-shadow: 3px 3px 10px 2px rgba(0,0,0,1);
+    background-color: var(--font1);
+}
+.onMobile li{
+    width: 100%;
+    height: 40px;
+    text-align: left;
+    margin-top: 20px;
+    padding:10px;
+    border-bottom: solid 2px #bfbbbb;
+    /* background-color: ; */
+}
+.onMobile .contact{
+    background-color: disable;
+}
+.icon-menu{
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* for normal view ================================================================*/
+
+@media only screen and (min-width:600px) {
+
+    /* ==================================== NAV BAR ======================================== */
+    .icon-menu{
+        
+        display: none;
+    }
+    .onMobile{
+        display: none;
+    }
+    ul li a:hover {
+        background-color:#8f8c8c;
+    }
+
+    /* ===================================== PAGE INDEX.HTML============================ */
+    .quo-1 {
+        width: 60%;
+        height: 100vh;
+    }
+
+    .quo-2 {
+        width: 40%;
+        height: 100vh;
+    }
+
+    .back2 {
+        transform: scale(.9, .8);
+    }
+    
+
+    /* =-===================================== ABOUT================================ */
+
+	.container-page2{
+        width:90%;
+        height: 200vh;
+        
+    }
+
+}
+
+/* this for hanphone =========================================================*/
+
+@media only screen and (max-width:600px) {
+    /* ====================================== NAV BAR============================== */
+    .icon-menu{
+        margin:20px;
+    } 
+    .hidden{
+        display: none;
+    }
+     .onMobile {
+        display: none;
+     }
+      ul li a:hover{
+
+        height:40px;
+        padding-right:200px ;
+        color:black;
+        width: 100%;
+     }
+
+    /* ===================================== PAGE INDEX.HTML========================== */
+    .page1 {
+        height: 300vh;
+    }
+
+    body {
+        max-height: 100%;
+        overflow-x: hidden;
+    }
+
+    .bg {
+        position: absolute;
+        background-color: #292424;
+        width: 440px;
+        height: 700px;
+        z-index: -1000;
+        top: -200px;
+        left: -50px;
+        margin-left: -100px;
+    }
+    .quo-1 .poto {
+        scale: 0.8;
+        margin:0px 0 0 -40px;
+    }
+    .quo-1 {
+        width: 100%;
+        height: 100vh;
+        margin:-30px 0 0 0;
+        position: relative;
+    }
+
+    .home {
+        font-size:1.2rem ;
+        margin-left: -250px;
+        cursor: pointer;
+       
+    }
+
+    .poto {
+        height: 200px;
+        width: 100%;
+        position: relative;
+        margin-top: 20px;
+    }
+
+    .poto1 {
+        width: 100px;
+        height: 100px;
+        position: relative;
+        margin-top: 120px;
+    }
+
+    .name {
+        height: 50px;
+        position: relative;
+        padding: 8px;
+        margin-top: 150px;
+        padding: 5px 30px 5px 40px;
+        font-size: 1.5rem;
+    }
+
+    .text1 {
+        font-size: 0.7rem;
+        width: 400px;
+        height: 350px;
+        padding: 40px;
+        margin-left: 60px;
+        margin-top: 60px;
+        position: absolute;
+    }
+
+    .bgt {
+
+        width: 100%;
+        height: 240px;
+        position: absolute;
+        margin: -30px -50px -40px -50px;
+        background-color: var(--div1);
+        padding: 50px 50px 200px 40px;
+        border-radius: 1rem;
+        border: solid 4px var(--font2);
+        opacity: 0.4;
+        z-index: -1;
+    }
+
+    .quo-2 {
+        scale: 0.9 ;
+        width: 100%;
+        height: 100vh;
+        /* margin-top: -50px; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: -1;
+        float: right;
+    }
+
+    .cir-1 {
+        right: 0;
+    }
+
+    .cir-2 {
+        top: 160px;
+        width: 100px;
+        height: 100px;
+    }
+
+    .cir-2-1 {
+        width: 100px;
+        height: 100px;
+    }
+
+    /* last page HOME */
+    .foto img {
+        position: absolute;
+        height: 120px;
+        width: 120px;
+        margin-left: -12px;
+    }
+
+    .foto {
+        width: 100%;
+        height: 100px;
+    }
+
+    .two {
+        width: 320px;
+        height: 50px;
+        margin-top: 30px;
+        margin-left: 74px;
+        padding: 10px;
+        font-size: 1.2rem;
+        /* transform: scale(0.9); */
+    }
+
+    .cita {
+        height: 100vh;
+        /* background-color: #bfbbbb; */
+    }
+
+    .box2 {
+        width: 400px;
+        height: 500px;
+        margin: 10px;
+        margin-top: -40px;
+        background: var(--div1);
+    }
+
+    .text3 {
+        margin-top: -20px;
+    }
+
+    .ketik-cita {
+        font-size:1.3rem ;
+        margin: 20px 10px 10px 20px;
+        text-indent: 30px;
+        line-height: 1.2em;
+        font-family: roboto;
+    }
+
+
+
+
+    /* ====================================== ABOUT ME============================ */
+
+    .res-about{
+        height: 440vh;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .container-page2{
+        padding-bottom: 60px;
+        top:150px;
+        margin-top:800px;
+        width:90%;
+        overflow:none;
+        height:fit-content;
+    }
+    .mg-80px a{
+        font-size: 1.6rem;
+    }
+
+    /* ======================================= SOSIAL DAN CONTACT ========================== */
+    .contact-bg{
+        height: 200vh;
+    }
+    .container-contact{
+        height: 200vh;
+        width: 100%;
+        
+    }
+    .wrapper-sosial{
+        height:100vh;
+        width:100%;
+    }
+    .wrapper-contact{
+        display:flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        height:100vh;
+        width: 100%;
+    }
+    .wrapper-contact h1{
+        width: 100%;
+        /* background-color:gray ; */
+    }
+    .wrapper-contact form{
+        scale: 1.1;
+    }
+    .grup-contact{
+        width: 100%;
+        height: 100vh;
+        margin:-50px  0 0 0;
+    }
+}
