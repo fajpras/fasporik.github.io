@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- ------meta data------- -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="reponse.css">
+
+
+    <title> about</title>
+	<style>
+	main{
+		position:relative;
+		width:100%;
+		height:240vh;
+		/* <!-- background:red; --> */
+			
+	}
+	.fl-blur-5px{
+	position:absolute;
+	width:100%;
+	height:240vh;
+	filter:blur(10px);
+	overflow:hidden;
+	z-index:-1;
+	/* <!-- background:blue; --> */
+	}
+	
+	.bg-img-about{
+	position:absolute;
+	width:100%;
+	height:240vh;
+	background-image:url(./foto/bg-about.jpg);
+	background-position: center;
+	background-repeat: no-repeat;	
+	background-size: cover;
+	z-index:-1;
+	}
+	
+	/* <!-- MAIN CODe --> */
+	
+
+	.w-h-200vh{
+	/* position:absolute; */
+	width:100%;
+	height:240vh;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	/* margin:50px; */
+	/* background-color:red; */
+	
+	}
+	
+
+	/* <!-- z-index:200; --> */
+	.container-page2{
+		position:relative;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        flex-direction: column;
+        border-radius: 1.5rem;
+        background-color:hsla(0, 0%, 52%, 0.566);
+	}
+	
+	.mg-80px{
+		cursor:pointer;
+		position: relative;
+		top:0;
+		margin-top:50px;
+		padding-right: 10px;
+		text-align: center;
+		font-family:	 spartan;
+		font-size: 20px;
+		border-bottom: solid 6px var(--font2);
+		/* background-color: red; */
+		/* finish */
+	}
+	.mg-80px a{ 
+		color:var(--font2);
+		text-decoration: none;
+		
+	}
+
+	
+	.text-about{
+		/* top:350px; */
+		position: relative;
+		width: 80%;
+		height: fit-content;
+		border:solid 8px var(--div2);
+		border-radius:1.2rem;
+		margin-top: 50px;
+		padding: 30px;
+		background-color: var(--div1);
+		
+	}
+
+	.text-about p{
+		text-align: justify;
+		position: relative;
+		font-size: 1.4em;
+		font-family:roboto;
+		color:rgb(64, 64, 64);
+		line-height: 1.4em;
+		word-spacing: .12em;
+	}
+
+
+	.wrap-card{
+		/* position: relative; */
+		margin-top:50px;
+		width: 80%;
+		height:50%;
+		/* background-color:tomato ; */
+	}
+	
+	.wrap-card .card-container{
+		gap:30px;
+		width: 100%;
+		height:100%;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		flex-wrap: wrap;
+		/* background-color: wheat; */
+	}
+
+	.card{
+		width: 300px;
+		height: 300px;
+		padding: 25px;
+		border-radius: 1.2rem;
+		background-color: aqua;
+	}
+
+	.bg-hobi1{
+		position: relative;
+		background-repeat: no-repeat;
+		background-size:cover;
+		background-image: url(./foto/hobi1.jpg);
+		z-index: 1;
+		display: flex;
+		justify-content: center;
+		align-items: center	;
+	}
+
+	.bg-hobi2{
+		position: relative;
+		background-repeat: no-repeat;
+		background-size:cover;
+		background-image: url(./foto/hobi2.jpg);
+		z-index: 1;
+		display: flex;
+		justify-content: center;
+		align-items: center	;
+
+
+	}
+
+	.bg-hobi3{
+		/* position: absolute; */
+		background-repeat: no-repeat;
+		background-size:cover;
+		background-image: url(./foto/coming.png);
+		z-index: 1;
+		display: flex;
+		justify-content: center;
+		align-items: center	;
+		opacity: 1;
+		border:solid 4px #000;
+		/* margin:20px; */
+	}
+
+
+	.bg-skil1{
+		background-repeat: no-repeat;
+		background-size:cover;
+		background-image: url(./foto/HTML&CSS.svg);
+		z-index: 1;
+		display: flex;
+		justify-content: center;
+		align-items: center	;
+		opacity: 1;
+		border:solid 4px #000;
+		
+
+
+	}
+
+
+	.bg-skil2{
+		background-repeat: no-repeat;
+		background-size:cover;
+		background-image: url(./foto/mikrotik.svg);
+		z-index: 1;
+		display: flex;
+		justify-content: center;
+		align-items: center	;
+		opacity: 1;
+		border:solid 4px #000;
+		background-color: white;
+		
+
+
+	}
+	 .hobi-blur{
+		position: absolute;
+		height: 300px;
+		width: 300px;
+		background-color: white;
+		opacity: 0.4;
+		/* filter:blur(16px); */
+		z-index: -2;
+		border-radius: 1.2rem;
+		border:solid 4px #000;
+		
+	}
+
+	.hobi-text{
+		font-family: spartan;
+		color:#000;
+		
+	}
+	.hobi-text h4{
+		padding-right:10px;
+		font-size: 1.6em;
+		line-height: 1.5em;
+		word-spacing: 1.2em;
+		text-align: left;
+	}
+
+	.hobi-text p{
+		border-left:solid 2px #000;
+		padding-left: 10px;
+		font-size: 1em; 
+		text-align: justify;
+	}
+	
+	</style>
+	
+	<script>
+		function showMobile(){
+			const muncul = document.querySelector('.onMobile')
+			muncul.style.display = 'block'
+		}
+		function closeMobile(){
+			const hilang = document.querySelector('.onMobile')
+			hilang.style.display = 'none'
+
+		}
+
+
+	</script>
+</head>
+
+<body>
+
+		<!-- FOR BACKROUND		 -->
+	<div class="fl-blur-5px">
+		<div class="bg-img-about"></div>
+	</div>
+
+		<!-- NAVIGATION BAR	 -->
+<header>
+	<nav >
+
+		<a style="font-size:1.6rem; " class="logo" href="index.html">Fajpras</a>
+	
+		<ul class="onPc">
+			
+			<li  class="hidden"><a id="" href="index.html">Home</a></li>
+			<li class="hidden"><a id="about" href="about.html">About.Me</a></li>
+			<li class="hidden"><a id="sosial" href="contact.html">Social</a></li>
+			<li class="hidden" ><a id="contact"  class="contact"href="contact.html">Contact</a></li>	
+			<li onclick="showMobile()"><i class="icon icon-menu">&#xe800;</i></li>
+	
+		</ul>
+		
+	
+		<ul  class="onMobile">
+			
+			<li onclick="closeMobile()">  <i class="icon icon-cancel">&#xe801;</i></li>
+			<li><a id="" href="index.html">Home</a></li>
+			<li><a id="about" href="about.html">About.Me</a></li>
+			<li><a id="sosial" href="contact.html">Social</a></li>
+			<li ><a id="contact"  href="contact.html">Contact</a></li>			
+			
+		</ul>
+	
+		</nav>
+</header>
+
+<main class="res-about" >
+<div class="w-h-200vh">
+
+	<div class=" container-page2">
+
+		<div class="mg-80px">
+			<h1><a href="#">About.Me</a></h1>
+				</div>
+		
+		<div class="text-about">
+		<p>
+			I am 17 years old, now im study at high school in Indonesia. Now 
+			I just learning about how to make a simple website with CSS and HTML a bit JS. this is 
+			my first website i make this from 2023 and I make responsive in 2024.
+		</p>
+		</div>
+		
+		<div class="wrap-card">
+		<div class="card-container">
+				<div class="card bg-hobi1 hobi-text"> <div class="hobi-blur "> </div><h4 >Belajar Hal Yang Baru</h4>	<p >I like a learn something new because it like more challenging</p></div>
+				<div class="card bg-hobi2 hobi-text"><div class="hobi-blur"></div><h4 > Workout & GYM</h4>	<p>Start from 2021 with just workout and 2023 start go gym, now i like go gym because its so fun </p></div>
+				<div class="card bg-hobi3 hobi-text"><div class="hobi-blur"></div><h4>Playing some games and playing some computer </h4></div>
+				<div class="card bg-skil1 hobi-text"><div class="hobi-blur"></div><h4> HTML & CSS</h4>	<p>Im can using HTML and CSS yeah its fun code</p></div>
+				<div class="card bg-skil2 hobi-text"><div class="hobi-blur"></div><h4> About Ethernet</h4>	<p>On high school im learning about networking and Im know all of things</p></div>
+				<!-- <div class="card bg-skil3 hobi-text"><div class="hobi-blur"></div><h4> KEEP LEARNING ITS MY SKILL & I II LEARNIG ALL NEW LESSON</h4></div> -->
+				<!-- <div class="card bg-skil4"><h4> ini card</h4>	<p>om omosjd 	dsooms spodko diin osda-0 fs</p></div> -->
+				
+		</div>
+		</div>
+
+	</div>
+</div>
+</main>
+
+<footer>
+	<div class="foot">
+		<a href="">
+		&copy; made with love
+		</a>
+	</div>
+</footer>
+
+
+</body>
+
+
+
+
+
+
+
