@@ -279,7 +279,7 @@
         margin: 10px;
         margin-top: -40px;
         background: var(--div1);
-        scale:0.9;
+        
     }
 
     .text3 {
@@ -294,7 +294,10 @@
         font-family: roboto;
     }
 
+.box2, .quo-1{
+scale:0.7;
 
+}
 
 
     /* ====================================== ABOUT ME============================ */
