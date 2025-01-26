@@ -135,6 +135,7 @@
     /* ===================================== PAGE INDEX.HTML========================== */
     .page1 {
         height: 300vh;
+        width: 100%;
     }
 
     body {
@@ -186,6 +187,7 @@
 
     .name {
         height: 50px;
+        width:fit-content;
         position: relative;
         padding: 8px;
         margin-top: 150px;
@@ -218,6 +220,7 @@
     }
 
     .quo-2 {
+        margin-top: 50px;
         scale: 0.9 ;
         width: 100%;
         height: 100vh;
@@ -231,16 +234,19 @@
     }
 
     .cir-1 {
+        display: none;
         right: 0;
     }
-
+    
     .cir-2 {
+        display: none;
         top: 160px;
         width: 100px;
         height: 100px;
     }
-
+    
     .cir-2-1 {
+        display: none;
         width: 100px;
         height: 100px;
     }
@@ -279,7 +285,7 @@
         margin: 10px;
         margin-top: -40px;
         background: var(--div1);
-        scale: 0.9;
+      
     }
 
     .text3 {
@@ -293,7 +299,9 @@
         line-height: 1.2em;
         font-family: roboto;
     }
-
+    .cita{
+        display: none;
+    }
 
 
 
