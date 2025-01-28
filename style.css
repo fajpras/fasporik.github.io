@@ -208,8 +208,6 @@ ul li a{
 }
 
 .quo-1{
-	width:60%;
-	height:100vh;
 	position:relative;
 	/* background-color:blue; */
 	/* display:block; */	
@@ -263,9 +261,16 @@ ul li a{
 	z-index:12;
 }
 
-
+.wrap-bgt{
+	position:relative;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items:center;
+}
 .bgt{
-	position:absolute;
+	
+    position:absolute;
 
 	background-color:var(--div1);
 	opacity:0.4;
@@ -273,6 +278,7 @@ ul li a{
 	border:solid 4px var(--font2);
 	z-index:-1;
 }
+
 
 .cir-1{
 	width:200px;
