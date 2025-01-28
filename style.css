@@ -266,9 +266,7 @@ ul li a{
 
 .bgt{
 	position:absolute;
-	width:600px;
-	margin:-20px -40px -40px -50px;
-	padding:80px 50px 200px 40px;
+
 	background-color:var(--div1);
 	opacity:0.4;
 	border-radius:1rem;
