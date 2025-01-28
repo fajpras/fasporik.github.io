@@ -200,8 +200,8 @@ ul li a{
 
 .box{
 	display:flex;
-	width:100%;
-	height:100vh ;
+	/* width:100%;
+	height:100vh ; */
 	flex-wrap:wrap;
 	position:relative;
 	/* background:var(--div1);	 */
@@ -263,27 +263,6 @@ ul li a{
 	z-index:12;
 }
 
-.text1{
-	position:relative;
-	width:600px;
-	margin-left:140px;
-	margin-top:-10px;
-	padding:60px 40px 200px 60px;
-	z-index:2;
-	/* background-color:var(--div1); */
-	/* opacity:50%; */
-}
-
-.text1 p{
-	margin-top:20px;
-	text-align:left;
-	font-family:roboto;
-	font-size:1.5em;
-	/* font-weight:bold; */
-	line-height:1.2023;
-	word-spacing:2px;
-	color:#000000;
-}
 
 .bgt{
 	position:absolute;
@@ -354,14 +333,14 @@ ul li a{
 }
 
 .bg1{
-	width:400px;
+	width:fit-content;
 	height:590px;
 	position:absolute;
 	background-image:url(./foto/01.png);
 	border-bottom-right-radius:1rem;
-	filter:contrast(.5);
-	z-index:-2;
-	/* filter:blur(5px); */
+	/* filter:contrast(1.2); */
+	z-index:-5;
+	/* filter:blur(); */
 	/* filter:sepia(1.2); */
 }
 
@@ -374,9 +353,23 @@ ul li a{
 	margin-top:20px;
 	margin-left:20px;
 }
-
+.bg1{
+	position:relative;
+	width: 100%;
+}
 .prof{
 	display:flex;
+	height:590px;
+	width:100%;
+	/* backdrop-filter: blur(10px); */
+	background-color:rgb(0, 0, 0 , 40%);
+	position:absolute;
+} 
+.div{
+	/* height: 400px; */
+	top: 100px;
+	position:absolute;
+	width:100%;
 }
 
 .text2{
@@ -405,14 +398,16 @@ ul li a{
 
 .div{
 	width:85%;
-	height:400px;
+	/* height:400px; */
 	margin:30px;
 	background-color:#ffffff;
 	border-radius:1rem;
 	opacity:60%;
+	/* width: fit-content; */
 }
 
 .text21{
+	height:fit-content ;
 	padding:30px;
 	text-align:justify;
 	justify-content:center;
@@ -430,32 +425,9 @@ ul li a{
 
 	/* HOME PAGE LAST */
 	
-.cita{
-	width:100%;
-	height:100vh;
-	margin:50px;
-	display:flex;
-	position:relative;
-	justify-content:center;
-	align-items:center;
-	/* background-color:red; */
-	z-index:-1;
-}
 
-.box2{
-	/* background:red; */
-	height:420px;
-	width:900px;
-	position:relative;
-	margin-top:-90px;
-	margin-left:120px;
-	background-color:var(--div1);
-	border-radius:1rem;
-	border:solid 8px #8e8a8a;
-	/* background-color:blue; */
-	/* z-index:100; */
-	/* opacity:0.8; */
-}
+
+
 
 .foto{
 	/* height: 100px; */
@@ -500,21 +472,19 @@ ul li a{
 	color:#000;
 }
 
-	 .page1{
-	height:200vh;
-	min-height:100%;
-	
-}
+
 
 .foot{
-	position:absolute!important;
+	margin: 0;
+	position:relative !important;
 	float:bottom !important;
 	height:60px;
-	width:100%;
+	width:100% !important; 
 	display:flex;
 	justify-content:center;
 	align-items:center;
 	background-color:var(--abu);
+	/* position: fixed; */
 }
 .foot a{
 	font-size:16px;

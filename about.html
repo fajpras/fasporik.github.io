@@ -11,17 +11,17 @@
 
     <title> about</title>
 	<style>
-	main{
+	.res-about{
 		position:relative;
 		width:100%;
-		height:240vh;
+		height:210vh;
 		/* <!-- background:red; --> */
 			
 	}
 	.fl-blur-5px{
 	position:absolute;
 	width:100%;
-	height:240vh;
+	height:210vh;
 	filter:blur(10px);
 	overflow:hidden;
 	z-index:-1;
@@ -31,7 +31,7 @@
 	.bg-img-about{
 	position:absolute;
 	width:100%;
-	height:240vh;
+	height:210vh;
 	background-image:url(./foto/bg-about.jpg);
 	background-position: center;
 	background-repeat: no-repeat;	
@@ -43,9 +43,9 @@
 	
 
 	.w-h-200vh{
-	/* position:absolute; */
-	width:100%;
-	height:240vh;
+	
+	margin-top:60px;
+	/* height:240vh; */
 	display:flex;
 	justify-content:center;
 	align-items:center;
@@ -57,7 +57,9 @@
 
 	/* <!-- z-index:200; --> */
 	.container-page2{
+		top:0;
 		position:relative;
+		margin-top:60px;
         display:flex;
         justify-content:center;
         align-items:center;
@@ -70,7 +72,7 @@
 		cursor:pointer;
 		position: relative;
 		top:0;
-		margin-top:50px;
+		/* margin-top:50px; */
 		padding-right: 10px;
 		text-align: center;
 		font-family:	 spartan;
@@ -78,6 +80,9 @@
 		border-bottom: solid 6px var(--font2);
 		/* background-color: red; */
 		/* finish */
+	}
+	.mg-80px h1{
+		margin-top:20px;
 	}
 	.mg-80px a{ 
 		color:var(--font2);

@@ -86,20 +86,75 @@
     }
 
     /* ===================================== PAGE INDEX.HTML============================ */
+  
+    .page1{
+        height:200vh;
+        min-height:100%;
+        
+    }
+    .box{
+        height:200vh;
+    }
+    
     .quo-1 {
         width: 60%;
         height: 100vh;
     }
 
+    .text1{
+        position:relative;
+        width:600px;
+        margin-left:140px;
+        margin-top:-10px;
+        padding:60px 40px 200px 60px;
+        z-index:2;
+        /* background-color:var(--div1); */
+        /* opacity:50%; */
+    }
+    
+    .text1 p{
+        margin-top:20px;
+        text-align:left;
+        font-family:roboto;
+        font-size:1.5em;
+        /* font-weight:bold; */
+        line-height:1.2023;
+        word-spacing:2px;
+        color:#000000;
+    }
     .quo-2 {
         width: 40%;
-        height: 100vh;
+        /* height: 100vh; */
     }
 
     .back2 {
         transform: scale(.9, .8);
     }
-    
+    .box2{
+        /* background:red; */
+        height:420px;
+        width:900px;
+        position:relative;
+        margin-top:-90px;
+        margin-left:120px;
+        background-color:var(--div1);
+        border-radius:1rem;
+        border:solid 8px #8e8a8a;
+        /* background-color:blue; */
+        /* z-index:100; */
+        /* opacity:0.8; */
+    }
+    .cita{
+        width:100%;
+        height:100vh;
+        margin:50px;
+        display:flex;
+        position:relative;
+        justify-content:center;
+        align-items:center;
+        /* background-color:red; */
+        z-index:-1;
+    }
 
     /* =-===================================== ABOUT================================ */
 
@@ -108,8 +163,12 @@
         height: 200vh;
         
     }
+ 
+    .w-h-200vh{
+        height:200vh;
+    }
 
-}
+}   
 
 /* this for hanphone =========================================================*/
 
@@ -124,26 +183,30 @@
      .onMobile {
         display: none;
      }
-      ul li a:hover{
-
-        height:40px;
-        padding-right:200px ;
-        color:black;
-        width: 100%;
+    ul li a{
+        /* user-select: none; */
+        -webkit-tap-higlight-color: transparent;
+        padding:10px 30px 3px 3px;
      }
-
+    
+      ul li  a:active{
+        /* background-color:black; */
+     }
+     .foot{
+        position: fixed;
+        width:100%;
+        height:40px;
+        
+     }
     /* ===================================== PAGE INDEX.HTML========================== */
     .page1 {
-        height: 300vh;
+        height: calc(100vh + 500px);
         width: 100%;
     }
 
-    body {
-        max-height: 100%;
-        overflow-x: hidden;
-    }
 
     .bg {
+        /* display: none; */
         position: absolute;
         background-color: #292424;
         width: 440px;
@@ -153,13 +216,18 @@
         left: -50px;
         margin-left: -100px;
     }
-    .quo-1 .poto {
-        scale: 0.8;
-        margin:0px 0 0 -40px;
+    .box{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
     }
+
     .quo-1 {
         width: 100%;
-        height: 100vh;
+        height: 400px;
         margin:-30px 0 0 0;
         position: relative;
     }
@@ -196,13 +264,22 @@
     }
 
     .text1 {
-        font-size: 0.7rem;
-        width: 400px;
-        height: 350px;
-        padding: 40px;
-        margin-left: 60px;
-        margin-top: 60px;
-        position: absolute;
+        position:relative;
+        width:80%;
+        height: 300px;
+        margin:20px;
+        padding:60px 40px 200px 60px;
+        z-index:2;
+    }
+    .text1 p{
+        font-size:1.2rem;
+        margin-top:20px;
+        text-align:left;
+        font-family:roboto;
+        /* font-weight:bold; */
+        line-height:1.2023;
+        word-spacing:2px;
+        color:#000000;
     }
 
     .bgt {
@@ -220,10 +297,10 @@
     }
 
     .quo-2 {
-        margin-top: 50px;
-        scale: 0.9 ;
+        margin-top: -50px;
+        /* scale: 0.8 ; */
         width: 100%;
-        height: 100vh;
+        /* height: 100vh; */
         /* margin-top: -50px; */
         display: flex;
         justify-content: center;
@@ -232,7 +309,9 @@
         z-index: -1;
         float: right;
     }
-
+    .bg1{
+        
+    }
     .cir-1 {
         display: none;
         right: 0;
@@ -254,8 +333,6 @@
     /* last page HOME */
     .foto img {
         position: absolute;
-        height: 120px;
-        width: 120px;
         margin-left: -12px;
     }
 
@@ -265,56 +342,66 @@
     }
 
     .two {
-        width: 320px;
+        background-color:rgb(195, 195, 195);
+        width: 100%;
         height: 50px;
         margin-top: 30px;
-        margin-left: 74px;
         padding: 10px;
-        font-size: 1.2rem;
+        font-size: 1.3rem;
+        border-radius:0;
+        color:black
         /* transform: scale(0.9); */
     }
 
+    .cita, .box2, .text3{
+        margin: 0;
+    }
     .cita {
-        height: 100vh;
+        /* height: 100vh; */
+        width: 100%;
+        height: fit-content;
+        margin-top:-90px;
         /* background-color: #bfbbbb; */
     }
-
+    
     .box2 {
-        width: 400px;
-        height: 500px;
-        margin: 10px;
+        height: 300px;
+        width: 100%;
         margin-top: -40px;
         background: var(--div1);
       
     }
-
+    
     .text3 {
-        margin-top: -20px;
+        /* margin-top: -20px; */
+        width: 100%;
     }
-
+    
     .ketik-cita {
-        font-size:1.3rem ;
-        margin: 20px 10px 10px 20px;
+        padding: 30px 20px 20px 20px;
+        width: 100%;
+        font-size:1.2rem ;
+      
         text-indent: 30px;
         line-height: 1.2em;
-        font-family: roboto;
+        font-family: sans2;
     }
-    .cita{
+
+    .foto img{
         display: none;
     }
 
-
-
-
     /* ====================================== ABOUT ME============================ */
 
+
     .res-about{
-        height: 440vh;
+        height: 300vh;
         align-items: center;
         justify-content: center;
         
     }
     .container-page2{
+        height: 300vh;
         padding-bottom: 60px;
         top:150px;
         margin-top:800px;
@@ -323,20 +410,27 @@
         height:fit-content;
     }
     .mg-80px a{
+        height: ;
         font-size: 1.6rem;
     }
+    .w-h-200vh{
+        /* height: ; */
+    }
+    .fl-blur-5px{
+        height: 300vh;
 
+    }
     /* ======================================= SOSIAL DAN CONTACT ========================== */
     .contact-bg{
-        height: 200vh;
+        height: 100vh;
     }
     .container-contact{
-        height: 200vh;
+        height: 100vh;
         width: 100%;
         
     }
     .wrapper-sosial{
-        height:100vh;
+        height:50vh;
         width:100%;
     }
     .wrapper-contact{
@@ -345,7 +439,7 @@
         text-align: center;
         align-items: center;
         justify-content: center;
-        height:100vh;
+        height:50vh;
         width: 100%;
     }
     .wrapper-contact h1{
