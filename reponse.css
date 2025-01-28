@@ -157,7 +157,23 @@
     }
 
     /* =-===================================== ABOUT================================ */
-
+    .res-about{
+		position:relative;
+		width:100%;
+		height:210vh;
+		/* <!-- background:red; --> */
+			
+	}
+    .bg-img-about{
+        position:absolute;
+        width:100%;
+        height:210vh;
+       
+        background-position: center;
+        background-repeat: no-repeat;	
+        background-size: cover;
+        z-index:-1;
+        }
 	.container-page2{
         width:90%;
         height: 200vh;
@@ -168,6 +184,10 @@
         height:200vh;
     }
 
+
+
+    /* =====================================CONTACT================================== */
+    
 }   
 
 /* this for hanphone =========================================================*/
@@ -200,7 +220,7 @@
      }
     /* ===================================== PAGE INDEX.HTML========================== */
     .page1 {
-        height: calc(100vh + 500px);
+        height: calc(200vh + 300px);
         width: 100%;
     }
 
@@ -227,7 +247,7 @@
 
     .quo-1 {
         width: 100%;
-        height: 400px;
+        height: 100vh;
         margin:-30px 0 0 0;
         position: relative;
     }
@@ -298,9 +318,9 @@
 
     .quo-2 {
         margin-top: -50px;
-        /* scale: 0.8 ; */
+        scale: 0.9 ;
         width: 100%;
-        /* height: 100vh; */
+        height: 100vh;
         /* margin-top: -50px; */
         display: flex;
         justify-content: center;
@@ -354,7 +374,7 @@
     }
 
     .cita, .box2, .text3{
-        margin: 0;
+        /* margin: 0; */
     }
     .cita {
         /* height: 100vh; */
@@ -367,7 +387,7 @@
     .box2 {
         height: 300px;
         width: 100%;
-        margin-top: -40px;
+        margin-top: 140px;
         background: var(--div1);
       
     }
@@ -395,13 +415,20 @@
 
 
     .res-about{
-        height: 300vh;
+        height: 400vh;
         align-items: center;
         justify-content: center;
         
     }
+    .bg-img-about{
+        height: 100%;
+        /* display:none; */
+        /* background-position: center; */
+        /* background-repeat: repeat;	 */
+        /* background-size: cover; */
+    }
     .container-page2{
-        height: 300vh;
+        /* height: 500vh; */
         padding-bottom: 60px;
         top:150px;
         margin-top:800px;
@@ -414,6 +441,7 @@
         font-size: 1.6rem;
     }
     .w-h-200vh{
+        display: none;
         /* height: ; */
     }
     .fl-blur-5px{
@@ -422,15 +450,15 @@
     }
     /* ======================================= SOSIAL DAN CONTACT ========================== */
     .contact-bg{
-        height: 100vh;
+        height: calc(100vh + 400px);
     }
     .container-contact{
-        height: 100vh;
+        height: 100%;
         width: 100%;
         
     }
     .wrapper-sosial{
-        height:50vh;
+        height:50%;
         width:100%;
     }
     .wrapper-contact{
@@ -439,8 +467,20 @@
         text-align: center;
         align-items: center;
         justify-content: center;
-        height:50vh;
+        height:50%;
         width: 100%;
+    }
+    .cont{
+        padding-top:50px;
+    }
+    .email-form{
+        padding-top:10px;
+    }
+    .gmail{
+        font-size: 1.1rem;
+    }
+    .grup-sosial table{
+        margin-top:10px;
     }
     .wrapper-contact h1{
         width: 100%;
