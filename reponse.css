@@ -19,10 +19,7 @@
     margin:20px 0 0 0;
 }
 
-.onPc{
-    /* display:; */
 
-}
 .onMobile{
     opacity: 0.81;
     justify-content: left;
@@ -209,9 +206,7 @@
         padding:10px 30px 3px 3px;
      }
     
-      ul li  a:active{
-        /* background-color:black; */
-     }
+ 
      .foot{
         position: fixed;
         width:100%;
@@ -317,8 +312,8 @@
     }
 
     .quo-2 {
-        margin-top: -50px;
-        scale: 0.9 ;
+        margin-top: -100px;
+        scale: 0.8 ;
         width: 100%;
         height: 100vh;
         /* margin-top: -50px; */
@@ -329,9 +324,7 @@
         z-index: -1;
         float: right;
     }
-    .bg1{
-        
-    }
+  
     .cir-1 {
         display: none;
         right: 0;
@@ -373,9 +366,7 @@
         /* transform: scale(0.9); */
     }
 
-    .cita, .box2, .text3{
-        /* margin: 0; */
-    }
+
     .cita {
         /* height: 100vh; */
         width: 100%;
@@ -437,7 +428,7 @@
         height:fit-content;
     }
     .mg-80px a{
-        height: ;
+   
         font-size: 1.6rem;
     }
     .w-h-200vh{
